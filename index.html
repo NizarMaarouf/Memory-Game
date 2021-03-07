@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/my-normalize.css" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Memory Game</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Memory Game</h1>
+
+    </header>
+
+    <section class="score-panel">
+      <h3>Score Panel</h3>
+      <ul id="star-rating" class="star-rating">
+        <li class="star"><i class="fa fa-star"></i></li>
+      </ul>
+      <span class="moves-counter">0</span> Moves
+      <div class="timer-container">
+        <span class="timer"><i class="fa fa-hourglass-start"></i> Timer: 00:00</span>
+      </div>
+      <div class="reset">
+        <button class="btn reset-btn">Reset <i class="fa fa-repeat"></i></button>
+      </div>
+    </section>
+    <ul class="deck"></ul>
+  </div>
+  <!-- Modal -->
+  <section class="win-game-modal">
+    <div id="modal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Congratulations!</h2>
+        <p>You have won the game and found all 8 pairs of cards.</p>
+        <img class="modal-img" src="/img/Vault-Boy-Thumb-Up.jpg"
+          alt="Vault boy giving the thumbs up from the game fall out">
+        <button class="btn play-again-btn">Play Again?</button>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+    <footer id="footer">
+      <p>Created By Nizar Maarouf</p>
+      <p>
+        <a href="https://github.com/NizarMaarouf" target="_blank">
+          <i class="fab fa-github fa-3x"> </i>
+        </a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/nizar-maarouf/" target="_blank" target>
+          <i class="fab fa-linkedin fa-3x"> </i>
+        </a>
+      </p>
+    </footer>
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>
